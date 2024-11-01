@@ -5,7 +5,7 @@
     <!-- :class="{'text-red': isTextActve}" -->
 
  <h2 :class="[heading2, blueClass]"> vvvvvvvvvvvvv </h2>
-
+<h3 :style="{color: activecolor, fontSize: fontSize + 'px'}"> Transition123</h3>
     <Transition>
     <p v-if="isTextActve"> Lorem ipsum dolor sit amet, consectetur
          adipisicing elit. Dolore, amet eveniet fugit harum facilis id 
@@ -30,7 +30,10 @@
       headingClass: 'heading',
       redClass: 'text-red',
       blueClass: 'text-blue',
-      heading2: 'heading2'
+      heading2: 'heading2',
+
+      fontSize: 40,
+      activeColor: 'red'
     }
   },
 
